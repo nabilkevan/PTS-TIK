@@ -768,15 +768,15 @@ orderButton.addEventListener("click", function(event) {
 
         if (document.getElementById("chocoBun").checked) {
             const qty = document.getElementById("qtyChocoBun").value;
-            orderDetails += `- Choco Bun x${qty}\n`;
+            orderDetails += `- Choco Bun  🍫🍞     x${qty}\n`;
         }
         if (document.getElementById("cheeseBun").checked) {
             const qty = document.getElementById("qtyCheeseBun").value;
-            orderDetails += `- Cheese Bun x${qty}\n`;
+            orderDetails += `- Cheese Bun  🧀🍞    x${qty}\n`;
         }
         if (document.getElementById("coffeeBun").checked) {
             const qty = document.getElementById("qtyCoffeeBun").value;
-            orderDetails += `- Coffee Bun x${qty}\n`;
+            orderDetails += `- Coffee Bun  ☕️🍞    x${qty}\n`;
         }
 
         if (!name || !address || !phone || orderDetails === "") {
@@ -785,7 +785,7 @@ orderButton.addEventListener("click", function(event) {
         }
 
         const message = 
-            `Halo, saya ingin memesan:\n${orderDetails}\nNama: ${name}\nAlamat: ${address}\nNomor HP: ${phone}`;
+            `Halo 🙌 , saya ingin memesan:\n${orderDetails}\nNama: ${name}\nAlamat: ${address}\nNomor HP: ${phone}`;
         
         const encodedMessage = encodeURIComponent(message);
         const waNumber = "6288223472071"; // Ganti dengan nomor WhatsApp
